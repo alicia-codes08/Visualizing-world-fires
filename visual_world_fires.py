@@ -28,7 +28,7 @@ for country, number in counts.items():
 # visualize data 
 title = "World fires 2002-2024"
 fig = px.choropleth(locations=countries,
-                    locationmode="country names",
+                    locationmode="country names", title=title,
                     color=numbers, projection="natural earth",
                     labels={"color":"number of fires"}) 
 
